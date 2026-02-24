@@ -1,0 +1,9 @@
+{
+  "short_name": "Fixly",
+  "name": "Fixly Technician App",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#3b1fa8",
+  "background_color": "#ffffff",
+  "icons": []
+}

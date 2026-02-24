@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-lg rounded-xl border border-white/25 shadow-lg shadow-black/10;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow-sm transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/15 text-blue-100 font-medium px-6 py-3 rounded-lg transition-colors duration-200 border border-white/25;
+  }
+
+  .btn-secondary-light {
+    @apply bg-white hover:bg-blue-50 text-blue-700 font-medium px-6 py-3 rounded-lg transition-colors duration-200 border border-gray-300;
+  }
+  
+  .input-field {
+    @apply w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all;
+  }
+
+  .input-field:-webkit-autofill,
+  .input-field:-webkit-autofill:hover,
+  .input-field:-webkit-autofill:focus,
+  .input-field:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff;
+    caret-color: #ffffff;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.1) inset;
+    box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.1) inset;
+    transition: background-color 9999s ease-in-out 0s;
+  }
+  
+  .stat-card {
+    @apply glass-card p-6 hover:bg-white/15 transition-all duration-200;
+  }
+
+  .admin-panel {
+    @apply glass-card p-6;
+  }
+
+  .admin-card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-md hover:border-blue-200 transition-all duration-200;
+  }
+
+  .admin-card-pad {
+    @apply admin-card p-6;
+  }
+
+  .admin-page {
+    @apply space-y-6;
+  }
+
+  .admin-page-title {
+    @apply text-3xl font-bold text-blue-700;
+  }
+
+  .admin-page-subtitle {
+    @apply text-gray-800;
+  }
+
+  .admin-section-title {
+    @apply text-xl font-semibold text-gray-800;
+  }
+
+  .admin-chip {
+    @apply px-3 py-1 rounded-full text-xs font-medium;
+  }
+
+  .admin-surface {
+    @apply bg-white border border-gray-200 rounded-xl;
+  }
+
+  .admin-input {
+    @apply w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-800 placeholder:text-gray-500 placeholder:font-medium focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-lg shadow-sm transition-colors duration-200;
+  }
+
+  .admin-heading {
+    @apply text-gray-800;
+  }
+
+  .admin-text {
+    @apply text-gray-700;
+  }
+
+  .admin-table-head {
+    @apply border-b border-gray-200 text-gray-700 font-semibold text-sm;
+  }
+
+  .admin-table-row {
+    @apply border-b border-gray-100 hover:bg-gray-50 transition-colors;
+  }
+}
