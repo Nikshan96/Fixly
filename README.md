@@ -68,3 +68,9 @@ Frontend runs on `http://localhost:5173`.
 
 - Backend health endpoint: `GET http://localhost:5000/api/health`
 - If frontend shows auth/role issues, clear local session data (`token`, `user`) and log in again.
+
+## Tech Stack
+- **Frontend:** React, Tailwind CSS, Vite
+- **Backend:** Node.js, Express, PostgreSQL
+- **Deployment:** TBD
+
