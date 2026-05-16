@@ -250,3 +250,9 @@ sequelize.sync({ alter: process.env.DB_SYNC_ALTER === 'true' })
   });
 
 module.exports = app;
+
+// Basic health check endpoint
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date() });
+});
+
